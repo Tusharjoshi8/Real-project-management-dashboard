@@ -32,11 +32,11 @@ app.use(morgan('dev'));
 
 // Routes
 app.use('/auth', authRoutes);
-app.use('/api/tasks', taskRoutes);
-app.use('/api/users', userRoutes);
-app.use('/api/activities', activityRoutes);
-app.use('/api/admin', adminRoutes);
-app.use('/api/reports', reportRoutes);
+app.use('/tasks', taskRoutes);
+app.use('/users', userRoutes);
+app.use('/activities', activityRoutes);
+app.use('/admin', adminRoutes);
+app.use('/reports', reportRoutes);
 
 app.get("/test", (req, res) => {
   res.send("SERVER UPDATED ✅");
