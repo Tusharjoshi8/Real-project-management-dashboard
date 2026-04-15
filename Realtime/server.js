@@ -31,7 +31,7 @@ app.use(cors({
 app.use(morgan('dev'));
 
 // Routes
-app.use('/api/', authRoutes);
+app.use('api/', authRoutes);
 app.use('/api/tasks', taskRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/activities', activityRoutes);
