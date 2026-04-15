@@ -25,7 +25,7 @@ const server = http.createServer(app);
 app.use(express.json());
 app.use(helmet());
 app.use(cors({
-  origin: '*',
+  origin: 'https://real-frontend1.onrender.com',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH']
 }));
 app.use(morgan('dev'));
