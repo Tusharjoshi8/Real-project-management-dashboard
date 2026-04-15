@@ -38,7 +38,9 @@ app.use('/api/activities', activityRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/reports', reportRoutes);
 
-
+app.get("/test", (req, res) => {
+  res.send("SERVER UPDATED ✅");
+});
 
 // Pass io to req for logging
 app.use((req, res, next) => {
